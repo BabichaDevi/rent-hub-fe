@@ -1,0 +1,54 @@
+/* PropertyList.css */
+
+/* Common styles */
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.roboto-bold-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.card-content {
+  padding: 15px;
+}
+
+.card-content h2 {
+  margin-top: 0;
+}
+
+.card-content p {
+  margin: 5px 0;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .cards-container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+
+@media (max-width: 576px) {
+  .card img {
+    height: 150px;
+  }
+
+  .card-content {
+    padding: 10px;
+  }
+}
